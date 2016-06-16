@@ -1,0 +1,80 @@
+/* app css stylesheet */
+
+body {
+  background-color: rgb(255,225,173);
+  font-family: Serif;
+}
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+#jumbo {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+div {
+  border: 1px solid black;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.jumbcontainer .jumbotron {
+  padding: 30px 0 20px 0;
+  margin: 0 3% 0 3%;
+  background-color: rgb(255, 255, 255);
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.maincontainer {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  width: 100%;
+
+}
+
+.jumbcontainer {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+#mainrow {
+  margin: 0 3% 0 3%;
+  background-color: rgb(251, 251, 251);
+}
+
+.janusz {
+  background-color: rgb(255, 255, 255);
+}
