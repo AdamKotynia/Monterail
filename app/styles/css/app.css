@@ -13,9 +13,6 @@ body {
   font-size: 0.9em;
   text-align: right; }
 
-* {
-  border: 1px solid black; }
-
 .jumbcontainer .jumbotron {
   padding: 30px 0 20px 0;
   margin: 0 3% 0 3%;
@@ -42,7 +39,7 @@ body {
   margin: 0 3% 0 3%;
   background-color: #fbfbfb; }
 
-.janusz {
+.inner-mainrow {
   background-color: white; }
 
 .row [class*="col-"] {
@@ -104,3 +101,15 @@ hr {
   height: 85%;
   vertical-align: bottom;
   position: relative; }
+
+.portrait {
+  display: block;
+  margin: 0.5em auto; }
+
+.activity-portrait {
+  margin-top: 3em; }
+
+.dot {
+  position: absolute;
+  bottom: -4%;
+  left: 43%; }
