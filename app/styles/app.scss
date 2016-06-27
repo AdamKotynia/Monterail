@@ -1,3 +1,5 @@
+@import "questions";
+
 body {
   background-color: rgb(255,225,173);
   font-family: Serif;
@@ -16,9 +18,9 @@ body {
   text-align: right;
 }
 
-* {
-  border: 1px solid black;
-}
+//* {
+//  border: 1px solid black;
+//}
 
 .jumbcontainer .jumbotron {
   padding: 30px 0 20px 0;
@@ -31,13 +33,6 @@ body {
   margin-right: 0;
 }
 
-.maincontainer {
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
-  width: 100%;
-
-}
-
 .jumbcontainer {
   margin: 0 0 0 0;
   padding: 0 0 0 0;
@@ -48,15 +43,6 @@ body {
   }
 }
 
-#mainrow {
-  margin: 0 3% 0 3%;
-  background-color: rgb(251, 251, 251);
-}
-
-.janusz {
-  background-color: rgb(255, 255, 255);
-}
-
 .row {
   [class*="col-"] {
     padding-left: 0 !important;
@@ -64,72 +50,9 @@ body {
   }
 }
 
-.bolek {
+.right-bar {
   text-align: right;
   position: absolute;
   bottom: 0.3em;
   right: 0;
-}
-
-.question {
-  margin-top: 1.8em;
-}
-
-.question-container {
-  height: 90px;
-  background-color: rgb(223, 243, 253);
-}
-
-.portrait {
-  margin-top: 1.1em;
-}
-
-.activity-container {
-  height: 230px;
-  //position: relative;
-}
-
-.activity-container-inner {
-  //position: absolute;
-  //bottom: 0;
-  height: 100%;
-}
-
-.action-type {
-  background-color: rgb(223, 243, 253);
-  height: 85%;
-  vertical-align: bottom;
-  position: relative;
-}
-
-.adam {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  display: block;
-}
-
-hr {
-  background-color: #0f0f0f;
-  height: 1px;
-  position: absolute;
-  bottom: 1%;
-  width: 90%;
-  margin-left: 5px;
-  margin-right: 5px;
-  text-align: center;
-}
-
-.more-activities {
-  height: 85%;
-  vertical-align: bottom;
-  position: relative;
-}
-
-.comments {
-  background-color: rgb(223, 243, 253);
-  height: 85%;
-  vertical-align: bottom;
-  position: relative;
 }

@@ -1,55 +1,65 @@
-<div class="container maincontainer">
-    <div class="row" id="mainrow">
-        <div class="col-md-8 col-md-offset-2 janusz">
+<div class="container maincontainer" ng-controller="QuestionsCtrl as qctr">
+    <div class="row" class="mainrow" ng-repeat="example in arr">
+        <div class="col-md-8 col-md-offset-2 inner-mainrow">
             <div class="row"> <!-- tutaj drugi row !-->
                 <div class="col-md-9">
                     <div class="row question-container">
-                        <div class="col-xs-2 portrait"><img src="../img/person1.png"></div>
+                        <div class="col-xs-2 portrait"><img src="/Monterail/app/img/person1.png" class="portrait"></div>
                         <div class="col-xs-10 question">Eva is asking:<br> Will insulin make my patients gain weight?</div>
                     </div>
                 </div>
                 <!--<div class="col-md-3">asd</div>-->
 
             </div>
+            <div class="row">
+                <div class="col-md-9 col-sm-7 col-xs-6">
+                    <div class="col-md-2 hidden-xs col-sm-4 gap"></div>
+                </div>
+
+            </div>
             <div class="row activity-container">
                 <div class="col-md-9 col-sm-7 col-xs-6 activity-container-inner">
                     <div class="col-md-2 hidden-xs col-sm-4 action-type">
                         <hr>
-                        <span class="adam">
+                        <span class="subtitle">
                             found
                         </span>
                     </div>
                     <div class="col-md-2 col-sm-4 col-xs-6 more-activities">
-                        <span class="adam">more activities</span>
-                        <img src="../img/dot.png">
+                        <span class="subtitle">more activities</span>
+                        <img src="/Monterail/app/img/dot.png" class="dot">
                     </div>
                     <div class="col-md-2 col-sm-4 col-xs-6 comments">
-                        <img src="../img/person1.png">
+                        <img src="/Monterail/app/img/person1.png" class="portrait activity-portrait">
                         <hr>
-                        <span class="adam">first nigga</span>
-                        <img src="../img/dot.png">
+                        <span class="subtitle">Commented</span>
+                        <img src="/Monterail/app/img/dot.png" class="dot">
                     </div>
                     <div class="col-md-2 hidden-sm hidden-xs comments">
-                        <img src="../img/person1.png">
+                        <img src="/Monterail/app/img/person1.png" class="portrait activity-portrait">
                         <hr>
-                        <span class="adam">first nigga</span>
-                        <img src="../img/dot.png">
+                        <span class="subtitle">Commented</span>
+                        <img src="/Monterail/app/img/dot.png" class="dot">
                     </div>
                     <div class="col-md-2 hidden-sm hidden-xs comments">
-                        <img src="../img/person1.png">
+                        <img src="/Monterail/app/img/person1.png" class="portrait activity-portrait">
                         <hr>
-                        <span class="adam">first nigga</span>
-                        <img src="../img/dot.png">
+                        <span class="subtitle">Commented</span>
+                        <img src="/Monterail/app/img/dot.png" class="dot">
                     </div>
                     <div class="col-md-2 hidden-sm hidden-xs comments">
-                        <img src="../img/person1.png">
+                        <img src="/Monterail/app/img/person1.png" class="portrait activity-portrait">
                         <hr>
-                        <span class="adam">first nigga</span>
-                        <img src="../img/dot.png">
+                        <span class="subtitle">Commented</span>
+                        <img src="/Monterail/app/img/dot.png" class="dot">
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-5 col-xs-6">
-                    oj janek
+                <div class="col-md-3 col-sm-5 col-xs-6 details">
+                    <span class="details-paragraph">
+                        <p>1 related discussion</p>
+                        <p>6 peers involved</p>
+                        <p>3 conversations</p>
+                    </span>
                 </div>
             </div>
         </div>

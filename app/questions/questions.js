@@ -10,6 +10,6 @@ config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRou
       });
 }])
 
-.controller('QuestionsCtrl', [function() {
-
+.controller('QuestionsCtrl', ['$scope', function($scope) {
+    $scope.arr = [{lame: 'lala'}, {lame: 'baba'}, {lame: 'kek'}];
 }]);
