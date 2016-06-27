@@ -4,7 +4,7 @@
   width: 100%; }
 
 .mainrow {
-  margin: 0 3% 0 3%;
+  margin: 0 3% 0 3% !important;
   background-color: #fbfbfb; }
 
 .inner-mainrow {
