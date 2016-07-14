@@ -10,6 +10,7 @@ config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRou
       });
 }])
 
-.controller('QuestionsCtrl', ['$scope', function($scope) {
-    $scope.arr = [{lame: 'lala'}, {lame: 'baba'}, {lame: 'kek'}];
+.controller('QuestionsCtrl', ['$scope', 'userDataService', function($scope, userDataService) {
+    $scope.questions = userDataService.questions;
+    $scope.users = userDataService.users;
 }]);
