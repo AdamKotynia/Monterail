@@ -95,6 +95,28 @@ hr {
 .to-left {
   padding-left: 12px; }
 
+.square {
+  height: 100px;
+  width: 90%;
+  background-color: lightblue;
+  display: inline-block; }
+
+.square-container {
+  margin-top: 30px;
+  margin-bottom: 20px; }
+
+#square1::before {
+  transform: rotate(-35deg); }
+
+#square2::before {
+  transform: rotate(-10deg); }
+
+#square3::before {
+  transform: rotate(-25deg); }
+
+#square4::before {
+  transform: rotate(10deg); }
+
 body {
   background-color: #ffe1ad;
   font-family: Serif; }
@@ -102,17 +124,17 @@ body {
 #jumbo {
   font-size: 35px;
   font-weight: bold;
-  margin: 0 0 0 0; }
+  margin: 0; }
 
 #radio {
   margin: 1em 0 0 0;
-  padding: 0 0 0 0;
+  padding: 0;
   font-size: 0.9em;
   text-align: right; }
 
 .jumbcontainer .jumbotron {
   padding: 30px 0 20px 0;
-  margin: 0 3% 0 3%;
+  margin: 0 3%;
   background-color: white; }
 
 .row {
@@ -120,8 +142,8 @@ body {
   margin-right: 0; }
 
 .jumbcontainer {
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
+  margin: 0;
+  padding: 0;
   width: 100%;
   background-color: white; }
   .jumbcontainer .jumbotron {

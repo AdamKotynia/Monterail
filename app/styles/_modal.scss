@@ -10,3 +10,31 @@
 .to-left {
   padding-left: 12px;
 }
+
+.square {
+  height: 100px;
+  width: 90%;
+  background-color: lightblue;
+  display: inline-block;
+}
+
+.square-container {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+#square1::before {
+  transform: rotate(-35deg);
+}
+
+#square2::before {
+  transform: rotate(-10deg);
+}
+
+#square3::before {
+  transform: rotate(-25deg);
+}
+
+#square4::before {
+  transform: rotate(10deg);
+}

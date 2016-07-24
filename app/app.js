@@ -22,7 +22,7 @@ service('userDataService', function() {
       //questions: [],
       //comments: [],
       joined: '2015/07/08',
-      photo: "/Monterail/app/img/person1.png"
+      photo: "/img/person1.png"
     },
     {
       //id: 2,
@@ -30,7 +30,7 @@ service('userDataService', function() {
       //questions: [],
       //comments: [],
       joined: '2015/05/06',
-      photo: "/Monterail/app/img/person2.png"
+      photo: "/img/person2.png"
     },
     {
       //id: 3,
@@ -38,7 +38,7 @@ service('userDataService', function() {
       //questions: [],
       //comments: [],
       joined: '2016/02/05',
-      photo: "/Monterail/app/img/person3.png"
+      photo: "/img/person3.png"
     }
   ];
 

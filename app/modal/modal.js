@@ -1,11 +1,12 @@
+"use strict";
 angular.module('myApp.modal', ['ui.router']).
 
 config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
     $stateProvider
         .state('modal', {
             url: '/modal',
-            templateUrl: 'modal/modal.html'
-            //controller: 'ModalCtrl'
+            templateUrl: 'modal/modal.html',
+            controller: 'ModalCtrl'
         });
     }]).
 
