@@ -19,7 +19,8 @@
 }
 
 .question {
-   margin-top: 1.8em;
+  margin-top: 1em;
+  padding-left: 1em !important;
  }
 
 .subtitle {
@@ -46,8 +47,13 @@ hr {
   margin: 0.5em auto;
 }
 
+.inner-portrait:hover {
+  cursor: pointer;
+}
+
 .activity-portrait {
   margin-top: 2.5em;
+  cursor: pointer;
 }
 
 .dot {
@@ -108,4 +114,11 @@ hr {
   height: 25px;
 }
 
+.link {
+  color: blue;
+}
+
+.link:hover {
+  cursor: pointer;
+}
 

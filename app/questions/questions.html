@@ -1,12 +1,12 @@
 <div class="container maincontainer" ng-controller="QuestionsCtrl as qctr">
     <div class="row mainrow" ng-repeat="question in questions">
-        <div class="col-md-8 col-md-offset-2 inner-mainrow">
+        <div class="col-md-8 col-md-offset-2 inner-mainrow" ng-controller="ModalCtrl">
             <div class="row"> <!-- tutaj drugi row !-->
                 <div class="col-md-9">
                     <div class="row question-container">
 
-                        <div class="col-xs-2 portrait"><img ng-src="{{question.photo}}" class="portrait"></div>
-                        <div class="col-xs-10 question">{{question.author}} is asking:<br> {{question.title}}</div>
+                        <div class="col-xs-2 portrait"><img ng-src="{{question.author.photo}}" ng-click="open(question.author)" class="portrait inner-portrait"></div>
+                        <div class="col-xs-10 question"><span class="link" ng-click="open(question.author)">{{question.author.name}}</span> is asking:<br> <a ng-click="go(question.author)">{{question.title}}</a></div>
                     </div>
                 </div>
                 <!--<div class="col-md-3">asd</div>-->
@@ -30,27 +30,10 @@
                         <span class="subtitle">more <br>activities</span>
                         <img src="/img/dot.png" class="dot">
                     </div>
-                    <div class="col-md-2 col-sm-4 col-xs-6 comments">
-                        <img ng-src="{{question.comments[0].photo}}" class="portrait activity-portrait">
+                    <div class="col-md-2 col-sm-4 col-xs-6 comments" ng-repeat="comment in question.comments | limitTo:limit">
+                        <img ng-src="{{comment.author.photo}}" class="portrait activity-portrait" ng-click="open(comment.author)">
                         <hr>
-                        <span class="subtitle">Commented</span>
-                        <img src="/img/dot.png" class="dot">
-                    </div>
-                    <div class="col-md-2 hidden-sm hidden-xs comments">
-                        <img src="/img/burka1.png" class="portrait activity-portrait">
-                        <hr>
-                        <span class="subtitle">Commented</span>
-                        <img src="/img/dot.png" class="dot">
-                    </div>
-                    <div class="col-md-2 hidden-sm hidden-xs comments">
-                        <img src="/img/person1.png" class="portrait activity-portrait">
-                        <hr>
-                        <span class="subtitle">Commented</span>
-                        <img src="/img/dot.png" class="dot">
-                    </div>
-                    <div class="col-md-2 hidden-sm hidden-xs comments">
-                        <img src="/img/person1.png" class="portrait activity-portrait">
-                        <hr>
+
                         <span class="subtitle">Commented</span>
                         <img src="/img/dot.png" class="dot">
                     </div>

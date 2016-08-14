@@ -1,6 +1,11 @@
 .modal-dialog {
-  margin-top: 30px;
-  width: 70%;
+  margin: 0;
+  width: 100%;
+  border: none;
+}
+
+.modal-content {
+  margin: 30px 13% 0 13%;
 }
 
 .modal-title {
@@ -12,10 +17,11 @@
 }
 
 .square {
-  height: 100px;
-  width: 90%;
+  height: 120px;
+  width: 120px;
   background-color: lightblue;
   display: inline-block;
+  position: relative;
 }
 
 .square-container {
@@ -23,18 +29,90 @@
   margin-bottom: 20px;
 }
 
-#square1::before {
+#square1 {
   transform: rotate(-35deg);
 }
 
-#square2::before {
+#square2 {
   transform: rotate(-10deg);
 }
 
-#square3::before {
+#square3 {
   transform: rotate(-25deg);
 }
 
-#square4::before {
+#square4 {
   transform: rotate(10deg);
+}
+
+#p1 {
+  transform: rotate(35deg);
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+#p2 {
+  transform: rotate(10deg);
+  position: absolute;
+  top: 40px;
+  left: 30px;
+}
+
+#p3 {
+  transform: rotate(25deg);
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+#p4 {
+  transform: rotate(-10deg);
+  position: absolute;
+  top: 40px;
+  left: 35px;
+}
+
+.small-square {
+  height: 90px;
+  width: 90px;
+  display: table;
+  margin: 0 auto;
+  position: relative;
+  background: repeating-linear-gradient(
+                  45deg,
+                  white,
+                  white 3px,
+                  beige 3px,
+                  beige 5px
+  );
+}
+
+.in-square {
+  position: absolute;
+  top: 15px;
+  left: 23px;
+}
+
+.joined-container {
+  margin-bottom: 70px;
+}
+
+.footsy {
+  position: relative;
+  background: repeating-linear-gradient(
+                  45deg,
+                  white,
+                  white 3px,
+                  beige 3px,
+                  beige 5px
+  );
+  padding-top: 30px;
+  margin-top: 20px;
+}
+
+.footer-img {
+  position: absolute;
+  top: -27px;
+  left: 47%;
 }

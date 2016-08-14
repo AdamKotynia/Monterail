@@ -13,22 +13,21 @@ gulp.task('sass', function(){
         .pipe(browserSync.stream());
 });
 
-gulp.task('js', function () {
-    return gulp.src(['./app/*/*.js', './app/*.js'])
-        .pipe(browserify())
-        .pipe(uglify())
-        .pipe(gulp.dest('./build'));
-});
-
-gulp.task('js-watch', ['js'], browserSync.reload);
-
 gulp.task('lint', function() {
     return gulp.src(['./app/*/*.js', './app/*.js'])
         .pipe(jshint())
         .pipe(jshint.reporter('default'));
 });
 
-gulp.task('browser-sync', function() {
+gulp.task('js', function () {
+    return gulp.src(['./app/*/*.js', './app/*.js'])
+        //.pipe(browserify())
+        //.pipe(uglify())
+        //.pipe(gulp.dest('./app/build'))
+        .pipe(browserSync.stream());
+});
+
+gulp.task('serve', ['js'], function() {
     browserSync.init({
         server: {
             baseDir: "./app/"
@@ -36,7 +35,7 @@ gulp.task('browser-sync', function() {
     });
 
     gulp.watch('app/styles/*.scss', ['sass']);
-    gulp.watch("app/*.html").on('change', browserSync.reload);
-    gulp.watch(['./app/*/*.js', './app/*.js'], ['js-watch']);
+    gulp.watch(["app/*.html", "app/*/*.html"]).on('change', browserSync.reload);
+    gulp.watch(['./app/*/*.js', './app/*.js'], ['js']);
 });
 

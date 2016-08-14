@@ -15,7 +15,8 @@
   background-color: #dff3fd; }
 
 .question {
-  margin-top: 1.8em; }
+  margin-top: 1em;
+  padding-left: 1em !important; }
 
 .subtitle {
   position: absolute;
@@ -38,8 +39,12 @@ hr {
   display: block;
   margin: 0.5em auto; }
 
+.inner-portrait:hover {
+  cursor: pointer; }
+
 .activity-portrait {
-  margin-top: 2.5em; }
+  margin-top: 2.5em;
+  cursor: pointer; }
 
 .dot {
   position: absolute;
@@ -85,9 +90,19 @@ hr {
   background-color: #dff3fd;
   height: 25px; }
 
+.link {
+  color: blue; }
+
+.link:hover {
+  cursor: pointer; }
+
 .modal-dialog {
-  margin-top: 30px;
-  width: 70%; }
+  margin: 0;
+  width: 100%;
+  border: none; }
+
+.modal-content {
+  margin: 30px 13% 0 13%; }
 
 .modal-title {
   text-align: center; }
@@ -96,26 +111,101 @@ hr {
   padding-left: 12px; }
 
 .square {
-  height: 100px;
-  width: 90%;
+  height: 120px;
+  width: 120px;
   background-color: lightblue;
-  display: inline-block; }
+  display: inline-block;
+  position: relative; }
 
 .square-container {
   margin-top: 30px;
   margin-bottom: 20px; }
 
-#square1::before {
+#square1 {
   transform: rotate(-35deg); }
 
-#square2::before {
+#square2 {
   transform: rotate(-10deg); }
 
-#square3::before {
+#square3 {
   transform: rotate(-25deg); }
 
-#square4::before {
+#square4 {
   transform: rotate(10deg); }
+
+#p1 {
+  transform: rotate(35deg);
+  position: absolute;
+  top: 40px;
+  left: 40px; }
+
+#p2 {
+  transform: rotate(10deg);
+  position: absolute;
+  top: 40px;
+  left: 30px; }
+
+#p3 {
+  transform: rotate(25deg);
+  position: absolute;
+  top: 40px;
+  left: 40px; }
+
+#p4 {
+  transform: rotate(-10deg);
+  position: absolute;
+  top: 40px;
+  left: 35px; }
+
+.small-square {
+  height: 90px;
+  width: 90px;
+  display: table;
+  margin: 0 auto;
+  position: relative;
+  background: repeating-linear-gradient(45deg, white, white 3px, beige 3px, beige 5px); }
+
+.in-square {
+  position: absolute;
+  top: 15px;
+  left: 23px; }
+
+.joined-container {
+  margin-bottom: 70px; }
+
+.footsy {
+  position: relative;
+  background: repeating-linear-gradient(45deg, white, white 3px, beige 3px, beige 5px);
+  padding-top: 30px;
+  margin-top: 20px; }
+
+.footer-img {
+  position: absolute;
+  top: -27px;
+  left: 47%; }
+
+.content {
+  height: 1000px; }
+
+.blue {
+  background-color: #dff3fd;
+  height: 100%; }
+
+.up {
+  height: 70px; }
+
+.down {
+  height: 150px; }
+
+.description {
+  padding: 1em 1em 1em 1em !important;
+  height: 150px;
+  box-sizing: border-box;
+  overflow: hidden; }
+
+.medium {
+  height: 100px;
+  overflow: hidden; }
 
 body {
   background-color: #ffe1ad;
@@ -150,8 +240,8 @@ body {
     position: relative; }
 
 .row [class*="col-"] {
-  padding-left: 0 !important;
-  padding-right: 0 !important; }
+  padding-left: 0;
+  padding-right: 0; }
 
 .right-bar {
   text-align: right;

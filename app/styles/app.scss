@@ -1,5 +1,6 @@
 @import "questions";
 @import "modal";
+@import "question";
 
 body {
   background-color: rgb(255,225,173);
@@ -46,8 +47,8 @@ body {
 
 .row {
   [class*="col-"] {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 

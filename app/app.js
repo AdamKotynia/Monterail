@@ -3,8 +3,10 @@
 // Declare app level module which depends on views, and components
 angular.module('myApp', [
   'ui.router',
+  'ngAnimate',
+  'ui.bootstrap',
   'myApp.questions',
-  'myApp.view2',
+  'myApp.question',
   'myApp.version',
   'myApp.modal'
 ]).
@@ -44,71 +46,96 @@ service('userDataService', function() {
 
   this.questions = [
     {
-      author: this.users[0].name,
-      photo: this.users[0].photo,
+      author: this.users[0],
       title: 'Will insulin make my patients gain weight?',
+      votes: 19,
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       comments: [
         {
-          author: this.users[1].name,
-          photo: this.users[1].photo
+          author: this.users[1],
+          votes: 19,
+          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dololit anim id est laborum."
         },
         {
-          author: this.users[1].name,
-          photo: this.users[1].photo
+          author: this.users[2],
+          votes: 19,
+          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dololit anim id est laborum."
         },
         {
-          author: this.users[1].name,
-          photo: this.users[1].photo
+          author: this.users[0],
+          votes: 19,
+          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dololit anim id est laborum."
         },
         {
-          author: this.users[1].name,
-          photo: this.users[1].photo
+          author: this.users[1],
+          votes: 19,
+          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dololit anim id est laborum."
+        },
+        {
+          author: this.users[1],
+          votes: 19,
+          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dololit anim id est laborum."
+        },
+        {
+          author: this.users[2],
+          votes: 19,
+          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dololit anim id est laborum."
         }
       ]
     },
     {
-      author: this.users[1].name,
-      photo: this.users[1].photo,
+      author: this.users[1],
       title: 'Vegan diet in diabetes?',
+      votes: 19,
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dololit anim id est laborum.",
       comments: [
         {
-          author: this.users[1].name,
-          photo: this.users[1].photo
+          author: this.users[1],
+          votes: 19,
+          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dololit anim id est laborum."
         },
         {
-          author: this.users[1].name,
-          photo: this.users[1].photo
+          author: this.users[1],
+          votes: 19,
+          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dololit anim id est laborum."
         },
         {
-          author: this.users[1].name,
-          photo: this.users[1].photo
+          author: this.users[1],
+          votes: 19,
+          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dololit anim id est laborum."
         },
         {
-          author: this.users[1].name,
-          photo: this.users[1].photo
+          author: this.users[1],
+          votes: 19,
+          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dololit anim id est laborum."
         }
       ]
     },
     {
-      author: this.users[2].name,
-      photo: this.users[2].photo,
+      author: this.users[2],
       title: 'Vegan diet to stop diabetes progress',
+      votes: 19,
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloa aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commoequat. Du dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       comments: [
         {
-          author: this.users[1].name,
-          photo: this.users[1].photo
+          author: this.users[1],
+          votes: 19,
+          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dololit anim id est laborum."
         },
         {
-          author: this.users[1].name,
-          photo: this.users[1].photo
+          author: this.users[1],
+          votes: 19,
+          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dololit anim id est laborum."
         },
         {
-          author: this.users[1].name,
-          photo: this.users[1].photo
+          author: this.users[1],
+          votes: 19,
+          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dololit anim id est laborum."
         },
         {
-          author: this.users[1].name,
-          photo: this.users[1].photo
+          author: this.users[1],
+          votes: 19,
+          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dololit anim id est laborum."
         }
       ]
     }
